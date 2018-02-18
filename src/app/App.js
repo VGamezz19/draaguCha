@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
-import { StyleSheet, Text, View, ActivityIndicator, ListView, TouchableOpacity, AsyncStorage } from 'react-native'
+import { ActivityIndicator, ListView } from 'react-native'
 
 
 import HomeView from './components/HomeView'
@@ -26,15 +26,6 @@ const RootNavigator = StackNavigator(
   }
 );
 
-// let storageSourceList
-// AsyncStorage.getItem('@dataSourceList', (err, res) => {
-//   //If user have some data in @dataSourceList, then ...
-//   if (res !== null) {
-//     storageSourceList = res
-//     console.warn(res)
-//   }
-// });
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -48,18 +39,7 @@ export default class App extends Component {
       }
   }
 
-  // componentDidMount() {
-  //   AsyncStorage.getItem('@dataSourceList', (err, res) => {
-  //     if(err) console.error('some error in componentDidMount App',err)
-  //     if(res !== null) console.warn("h")//this.updateDataSource(JSON.stringify(res))
-  //   })
-  // }
-
   updateDataSource = (data) => {
-    //set data to AsyncStorage
-    // let jsonData = JSON.stringify(data)
-    // AsyncStorage.setItem('@dataSourceList',jsonData);
-
     this.setState({
       dataSourceList: this.state.dataSourceList.cloneWithRows(data),
       load: false
