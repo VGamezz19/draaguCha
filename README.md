@@ -15,12 +15,12 @@ He intentado introducir el concepot "AsyncStorage" pero he tenido muchos problem
 
 ## Estructura de componentes 
 
-![Img]()
+![Img](https://github.com/VGamezz19/draaguCha/blob/master/public/img/estructura.png)
 
  ## Captura de test
 
-![Img]()
+![Img](https://github.com/VGamezz19/draaguCha/blob/master/public/img/test.png)
 
  ## Captura de muestra
 
- ![Img]()
+ ![Img](https://github.com/VGamezz19/draaguCha/blob/master/public/img/moviles.png)
